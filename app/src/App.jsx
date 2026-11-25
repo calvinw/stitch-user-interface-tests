@@ -3,10 +3,9 @@ import CounterPage from './pages/CounterPage.jsx'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<CounterPage />} />
-        <Route path="/counter" element={<CounterPage />} />
       </Routes>
     </BrowserRouter>
   )
