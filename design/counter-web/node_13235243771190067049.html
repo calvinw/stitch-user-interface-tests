@@ -1,0 +1,241 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter — Tally Web</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config" data-stitch-original-src="1ba74fbc4f509f5a===../../tailwind.config.js">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'light-primary': '#1D6A63',
+        'light-on-primary': '#E2FFFA',
+        'light-primary-container': '#A8F0E7',
+        'light-on-primary-container': '#045C56',
+        'light-secondary': '#4A6460',
+        'light-on-secondary': '#E2FFFA',
+        'light-secondary-container': '#CCE8E4',
+        'light-on-secondary-container': '#3D5653',
+        'light-tertiary': '#356579',
+        'light-on-tertiary': '#F3FAFF',
+        'light-tertiary-container': '#B7E7FF',
+        'light-on-tertiary-container': '#245669',
+        'light-error': '#A83836',
+        'light-on-error': '#FFF7F6',
+        'light-error-container': '#FA746F',
+        'light-on-error-container': '#6E0A12',
+        'light-background': '#F6FAF8',
+        'light-on-background': '#2A3433',
+        'light-surface': '#F6FAF8',
+        'light-surface-dim': '#D1DCDA',
+        'light-surface-bright': '#F6FAF8',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#EEF5F3',
+        'light-surface-container': '#E7F0ED',
+        'light-surface-container-high': '#E1EAE8',
+        'light-surface-container-highest': '#D9E5E2',
+        'light-on-surface': '#2A3433',
+        'light-surface-variant': '#D9E5E2',
+        'light-on-surface-variant': '#56615F',
+        'light-outline': '#727D7B',
+        'light-outline-variant': '#A9B4B2',
+        'light-inverse-surface': '#0A0F0E',
+        'light-inverse-on-surface': '#999E9C',
+        'light-inverse-primary': '#B6FEF5',
+        'light-shadow': '#000000',
+        'light-scrim': '#000000',
+        'dark-primary': '#9CD1C9',
+        'dark-on-primary': '#0F4843',
+        'dark-primary-container': '#265B55',
+        'dark-on-primary-container': '#B8EEE6',
+        'dark-secondary': '#B1CCC8',
+        'dark-on-secondary': '#2C4542',
+        'dark-secondary-container': '#27403D',
+        'dark-on-secondary-container': '#A9C5C0',
+        'dark-tertiary': '#D9F2FF',
+        'dark-on-tertiary': '#2E5E72',
+        'dark-tertiary-container': '#B7E7FF',
+        'dark-on-tertiary-container': '#245669',
+        'dark-error': '#FA746F',
+        'dark-on-error': '#490006',
+        'dark-error-container': '#871F21',
+        'dark-on-error-container': '#FF9993',
+        'dark-background': '#0A0F0E',
+        'dark-on-background': '#DCE8E5',
+        'dark-surface': '#0A0F0E',
+        'dark-surface-dim': '#0A0F0E',
+        'dark-surface-bright': '#242E2D',
+        'dark-surface-container-lowest': '#000000',
+        'dark-surface-container-low': '#0E1514',
+        'dark-surface-container': '#131B1A',
+        'dark-surface-container-high': '#192120',
+        'dark-surface-container-highest': '#1D2826',
+        'dark-on-surface': '#DCE8E5',
+        'dark-surface-variant': '#1D2826',
+        'dark-on-surface-variant': '#A2ADAB',
+        'dark-outline': '#6D7876',
+        'dark-outline-variant': '#3F4A48',
+        'dark-inverse-surface': '#F6FAF8',
+        'dark-inverse-on-surface': '#515655',
+        'dark-inverse-primary': '#346762',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '24px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '48px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Wix Madefor Display"', 'sans-serif'],
+        'headline': ['"Wix Madefor Display"', 'sans-serif'],
+        'title': ['"Instrument Sans"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+        'mono': ['"Spline Sans Mono"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['72px', { lineHeight: '80px', letterSpacing: '-2px', fontWeight: '700' }],
+        'display-lg-mobile': ['32px', { lineHeight: '38px', letterSpacing: '-0.75px', fontWeight: '700' }],
+        'headline-lg': ['32px', { lineHeight: '40px', letterSpacing: '-0.5px', fontWeight: '600' }],
+        'headline-lg-mobile': ['24px', { lineHeight: '30px', letterSpacing: '-0.25px', fontWeight: '600' }],
+        'title-md': ['18px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-md': ['15px', { lineHeight: '22px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['15px', { lineHeight: '20px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['12px', { lineHeight: '16px', letterSpacing: '0.2px', fontWeight: '500' }],
+        'mono-lg': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '100ms',
+        'surface-enter': '200ms',
+        'surface-exit': '150ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+        'surface-exit': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+        'surface-exit': 'cubic-bezier(0.3, 0, 1, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@500&amp;family=Wix+Madefor+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>.material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons { display: inline-block; width: 1em; height: 1em; line-height: 1 !important; box-sizing: content-box; overflow: hidden; white-space: nowrap; direction: ltr; vertical-align: middle; }</style>
+</head>
+<body class="bg-light-surface text-light-on-surface antialiased">
+  <main class="min-h-screen w-full bg-light-surface flex flex-col items-center justify-center p-section">
+    <div class="w-full max-w-md flex flex-col items-center gap-gutter-lg">
+      <!-- COMPONENT: card-action -->
+      <article data-component-id="card-action" data-component-type="card" data-component-variant="action" class="w-full bg-light-surface-container-lowest border border-light-outline-variant rounded-xl p-gutter-xl flex flex-col items-center gap-gutter-xl">
+        <header class="w-full flex flex-col items-center gap-gutter-xs text-center">
+          <h1 class="font-headline text-headline-lg-mobile md:text-headline-lg text-light-on-surface" data-design-text-token="headline-lg">Counter</h1>
+          <p class="font-body text-body-md text-light-on-surface-variant" data-design-text-token="body-md">Click or use arrow keys to adjust</p>
+        </header>
+
+        <div class="w-full bg-light-surface-container-low rounded-lg py-section px-gutter-xl flex items-center justify-center">
+          <!-- COMPONENT: typography-display -->
+          <span id="count-display" role="status" aria-live="polite" aria-atomic="true" data-component-id="typography-display" data-component-type="typography" data-component-variant="display" data-design-text-token="display-lg" class="font-display text-display-lg-mobile md:text-display-lg text-light-on-surface tabular-nums transition-transform duration-state-change ease-state-change">0</span>
+        </div>
+
+        <footer class="w-full grid grid-cols-2 gap-gutter-md">
+          <!-- COMPONENT: button-secondary -->
+          <button id="decrement-btn" data-component-id="button-secondary" data-component-type="button" data-component-variant="secondary" type="button" aria-label="Decrement count" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-md rounded-lg bg-light-secondary-container text-light-on-secondary-container transition-transform duration-state-change ease-state-change hover:opacity-90 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-secondary cursor-pointer">
+            <span class="material-symbols-outlined" aria-hidden="true">remove</span>
+            <span class="font-label text-label-lg" data-design-text-token="label-lg">Minus</span>
+          </button>
+
+          <!-- COMPONENT: button-primary -->
+          <button id="increment-btn" data-component-id="button-primary" data-component-type="button" data-component-variant="primary" type="button" aria-label="Increment count" class="inline-flex items-center justify-center gap-gutter-sm px-gutter-lg py-gutter-md rounded-lg bg-light-primary text-light-on-primary transition-transform duration-state-change ease-state-change hover:opacity-95 active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-primary cursor-pointer">
+            <span class="material-symbols-outlined" aria-hidden="true">add</span>
+            <span class="font-label text-label-lg" data-design-text-token="label-lg">Plus</span>
+          </button>
+        </footer>
+      </article>
+
+      <div class="flex flex-col items-center gap-gutter-sm">
+        <!-- COMPONENT: button-with-icon -->
+        <button id="reset-btn" data-component-id="button-with-icon" data-component-type="button" data-component-variant="with-icon" type="button" disabled class="inline-flex items-center justify-center gap-gutter-sm px-gutter-md py-gutter-sm rounded-full bg-light-surface-container text-light-on-surface-variant border border-light-outline-variant transition-transform duration-state-change ease-state-change hover:bg-light-surface-container-high active:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-light-primary disabled:bg-light-surface-container-low disabled:border-light-surface-variant disabled:cursor-not-allowed cursor-pointer">
+          <span class="material-symbols-outlined text-title-md" aria-hidden="true">restart_alt</span>
+          <span class="font-label text-label-lg" data-design-text-token="label-lg">Reset</span>
+        </button>
+
+        <!-- COMPONENT: typography-label -->
+        <span data-component-id="typography-label" data-component-type="typography" data-component-variant="label" data-design-text-token="label-sm" class="font-label text-label-sm text-light-on-surface-variant">Keyboard: ↑ / ↓ to count · R to reset</span>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var count = 0;
+      var display = document.getElementById('count-display');
+      var incBtn = document.getElementById('increment-btn');
+      var decBtn = document.getElementById('decrement-btn');
+      var resetBtn = document.getElementById('reset-btn');
+
+      function updateDisplay() {
+        display.textContent = String(count);
+        resetBtn.disabled = count === 0;
+        display.classList.add('scale-105');
+        window.setTimeout(function () {
+          display.classList.remove('scale-105');
+        }, 100);
+      }
+
+      incBtn.addEventListener('click', function () {
+        count += 1;
+        updateDisplay();
+      });
+
+      decBtn.addEventListener('click', function () {
+        count -= 1;
+        updateDisplay();
+      });
+
+      resetBtn.addEventListener('click', function () {
+        count = 0;
+        updateDisplay();
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'ArrowUp' || event.key === '+' || event.key === '=') {
+          event.preventDefault();
+          count += 1;
+          updateDisplay();
+        } else if (event.key === 'ArrowDown' || event.key === '-') {
+          event.preventDefault();
+          count -= 1;
+          updateDisplay();
+        } else if (event.key === 'r' || event.key === 'R') {
+          if (count !== 0) {
+            count = 0;
+            updateDisplay();
+          }
+        }
+      });
+    })();
+  </script>
+
+
+</body></html>
